@@ -26,11 +26,11 @@ export function NumericInput({
   onChange,
   style,
 }: NumericInputProps) {
-  const [text, setText] = useState(value.toFixed(precision))
+  const [text, setText] = useState(Number(value).toFixed(precision))
   const [focused, setFocused] = useState(false)
 
   useEffect(() => {
-    if (!focused) setText(value.toFixed(precision))
+    if (!focused) setText(Number(value).toFixed(precision))
   }, [value, focused, precision])
 
   const clamp = (v: number) => {
@@ -65,19 +65,20 @@ export function NumericInput({
   }
 
   return (
-    <span className={styles.wrapper}>
-      <input
+    <span className= { styles.wrapper } >
+    <input
         type="text"
-        inputMode="decimal"
-        value={text}
-        onChange={e => setText(e.target.value)}
-        onFocus={() => setFocused(true)}
-        onBlur={handleBlur}
-        onKeyDown={handleKeyDown}
-        className={styles.input}
-        style={style}
-      />
-      {suffix && <span className={styles.suffix}>{suffix}</span>}
-    </span>
+  inputMode = "decimal"
+  value = { text }
+  onChange = { e => setText(e.target.value) }
+  onFocus = {() => setFocused(true)
+}
+onBlur = { handleBlur }
+onKeyDown = { handleKeyDown }
+className = { styles.input }
+style = { style }
+  />
+  { suffix && <span className={ styles.suffix }> { suffix } </span>}
+</span>
   )
 }

@@ -5,14 +5,18 @@ import template, { SchemeName } from './template'
 
 const cwd = process.cwd()
 
+const newNames = {
+  dark: 'mirage-soft-and-fresh',
+  mirage: 'mirage-soft',
+}
+
 // Copy icon files from ayu-colors
 // cpSync(join(cwd, 'node_modules/ayu/icons'), join(cwd, 'icons'), { recursive: true })
 // console.log('Copied icons')
 
 // Generate color themes
-for (const variant of ['mirage'] as SchemeName[]) {
-  writeFileSync(join(cwd, `ayu-${variant}.json`), JSON.stringify(template(variant, true), null, '\t'))
-  writeFileSync(join(cwd, `ayu-${variant}-unbordered.json`), JSON.stringify(template(variant, false), null, '\t'))
+for (const variant of ['dark', 'mirage'] as SchemeName[]) {
+  writeFileSync(join(cwd, `ayu-${newNames[variant]}.json`), JSON.stringify(template(variant), null, '\t'))
   console.log(`Updated ${variant}`)
 }
 

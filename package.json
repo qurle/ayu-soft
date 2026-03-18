@@ -35,7 +35,12 @@
       {
         "label": "Ayu Mirage Soft",
         "uiTheme": "vs-dark",
-        "path": "./ayu-mirage-unbordered.json"
+        "path": "./ayu-mirage-soft.json"
+      },
+      {
+        "label": "Ayu Mirage Soft And Fresh",
+        "uiTheme": "vs-dark",
+        "path": "./ayu-mirage-soft-and-fresh.json"
       }
     ]
   },

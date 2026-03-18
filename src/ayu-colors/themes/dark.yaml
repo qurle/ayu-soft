@@ -1,86 +1,86 @@
 palette:
-  range: 0.727:0.875
+  range: 0.725:0.925
   steps: "5"
-  gray: 5A6673 R0.35:0.55
-  red: F07178
-  pink: F29668
-  orange: FF8F40
-  peach: E6C08A
-  yellow: FFB454
-  green: AAD94C
+  gray: 6E7C8F
+  red: F28779
+  pink: F29E74
+  orange: FFA659
+  peach: D9BE98
+  yellow: FFCD66
+  green: D5FF80
   teal: 95E6CB
-  indigo: 39BAE6
-  blue: 59C2FF
-  purple: D2A6FF
+  indigo: 5CCFE6
+  blue: 73D0FF
+  purple: DFBFFF
 syntax:
-  tag: $palette.indigo.l2
-  func: $palette.yellow.l4
-  entity: $palette.blue.l3
-  string: $palette.green.l4
-  regexp: $palette.teal.l5
-  markup: $palette.red.l2
-  keyword: $palette.orange.l3
-  special: $palette.peach.l4
-  comment: $palette.gray.l4
-  constant: $palette.purple.l3
-  operator: $palette.pink.l3
+  tag: $syntax.entity C0.05 L0.84
+  func: CCE73A
+  entity: 968EFA
+  string: DAF462
+  regexp: $palette.teal.l4
+  markup: "828282"
+  keyword: 968EFA
+  special: $palette.peach.l3
+  comment: 606D80
+  constant: $editor.fg
+  operator: $editor.fg A0.51
 terminal:
   black: 0A0000
-  red: $syntax.markup -L0.07
-  green: $syntax.string -L0.07
-  yellow: $syntax.func -L0.07
-  blue: $syntax.entity -L0.07
+  red: $syntax.markup -L0.05
+  green: BCD708
+  yellow: $palette.yellow.l4 -L0.07
+  blue: $palette.blue.l2 -L0.07
   magenta: $syntax.constant -L0.07
   cyan: $syntax.regexp -L0.07
-  white: FFFFFF
+  white: $palette.gray.l4
   brightBlack: 0A0000
-  brightRed: $syntax.markup
-  brightGreen: $syntax.string
+  brightRed: $syntax.markup +L0.02
+  brightGreen: D3EF2F
   brightYellow: $syntax.func
   brightBlue: $syntax.entity
   brightMagenta: $syntax.constant
   brightCyan: $syntax.regexp
-  brightWhite: FFFFFF
+  brightWhite: $palette.gray.l5
 vcs:
-  added: 70BF56
-  modified: 73B8FF
-  removed: F26D78
+  added: 87D96C
+  modified: 80BFFF
+  removed: F27983
 surface:
-  sunk: $surface.base -L0.1
-  base: 0D1017
-  lift: 10141C
+  sunk: 0F1012
+  base: 1C1D1F
+  lift: "1C1D1F"
   over: FFFFFF
 editor:
-  fg: BFBDB6
-  bg: CCFF00
-  line: 161A24
+  fg: C0C3C8
+  bg: $surface.lift
+  line: 1B1E1E
   selection:
-    active: 3388FF A0.25
-    inactive: 80B5FF A0.15
+    active: $ui.selection.active
+    inactive: $editor.selection.active A0.13
   findMatch:
-    active: 4C4126
-    inactive: $editor.findMatch.active A0.5
+    active: "736950"
+    inactive: $editor.findMatch.active A0.4
   lineNumber:
     active: $ui.fg
-    normal: $ui.fg A0.65
+    normal: $ui.fg A0.5
   indentGuide:
-    active: $ui.fg A0.63
-    normal: $ui.fg A0.26
+    active: $ui.fg A0.44
+    normal: $ui.fg A0.23
 ui:
-  fg: 5A6378
+  fg: 71767F
   bg: $surface.base
-  line: 1B1F29
+  line: 1C1D1F
   selection:
-    active: 475266 A0.25
-    normal: $ui.selection.active A0.2
+    active: FFFFFF A0.1
+    normal: 69758C A0.12
   panel:
-    bg: "141821"
-    shadow: 000000 A0.5
+    bg: $ui.bg L0.29
+    shadow: 000000 A0.2
   popup:
-    bg: 0F131A
-    shadow: $ui.panel.shadow
+    bg: $ui.panel.bg
+    shadow: $ui.panel.shadow A0.3
 common:
   accent:
-    tint: E6B450
-    on: $common.accent.tint -L0.31
-  error: D95757
+    tint: D9DADD
+    on: $common.accent.tint -L0.39
+  error: FF6666

@@ -51,7 +51,7 @@ surface:
   lift: "1C1D1F"
   over: FFFFFF
 editor:
-  fg: E4E7EC
+  fg: C4C4C4
   bg: $surface.lift
   line: 1B1E1E
   selection:
@@ -74,10 +74,10 @@ ui:
     active: FFFFFF A0.1
     normal: 69758C A0.12
   panel:
-    bg: 1C1D1F
+    bg: $ui.bg L0.29
     shadow: 000000 A0.2
   popup:
-    bg: 1C1D1F
+    bg: $ui.panel.bg
     shadow: $ui.panel.shadow A0.3
 common:
   accent:

@@ -23,7 +23,7 @@ const terminalColors = {
   }
 }
 
-export default (variant: SchemeName, bordered: boolean) => {
+export default (variant: SchemeName, bordered: boolean = false) => {
   const scheme = ayu[variant]
   return {
     type: variant === 'light' ? 'light' : 'dark',
@@ -124,7 +124,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'tree.indentGuidesStroke': scheme.editor.indentGuide.active.hex(),
 
       'listFilterWidget.background': scheme.ui.panel.bg.hex(),
-      'listFilterWidget.outline': scheme.common.accent.tint.hex(),
+      'listFilterWidget.outline': scheme.ui.line.hex(),
       'listFilterWidget.noMatchesOutline': scheme.common.error.hex(),
       'list.filterMatchBackground': scheme.editor.findMatch.inactive.darken(0.3).hex(),
       'list.filterMatchBorder': scheme.editor.findMatch.inactive.hex(),
@@ -440,7 +440,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'commandCenter.foreground': scheme.ui.fg.hex(),
       'commandCenter.activeForeground': scheme.ui.fg.hex(),
       'commandCenter.background': scheme.editor.bg.hex(),
-      'commandCenter.activeBackground': scheme.ui.selection.active.hex(),
+      'commandCenter.activeBackground': scheme.ui.fg.alpha(0.05).hex(),
       'commandCenter.border': scheme.ui.line.hex(),
       'commandCenter.inactiveBorder': scheme.ui.line.hex(),
       'commandCenter.activeBorder': scheme.ui.selection.active.alpha(0).hex(),
