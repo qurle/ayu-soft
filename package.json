@@ -1,21 +1,24 @@
 {
-  "name": "ayu",
-  "displayName": "Ayu",
-  "description": "A simple theme with bright colors and comes in three versions — dark, light and mirage for all day long comfortable work.",
-  "version": "1.1.11",
-  "publisher": "teabyii",
+  "name": "ayu-soft",
+  "displayName": "Ayu Soft",
+  "description": "A soften fork of Auy Mirage theme",
+  "version": "1.2.0",
+  "publisher": "qurle",
+  "author": {
+    "name": "Nikita Denisov",
+    "email": "nick@qurle.net"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ayu-theme/vscode-ayu"
+    "url": "https://github.com/qurle/ayu-soft"
   },
   "bugs": {
-    "url": "https://github.com/ayu-theme/vscode-ayu/issues",
-    "email": "teabyii@gmail.com"
+    "url": "https://github.com/qurle/ayu-soft/issues",
+    "email": "nick@qurle.net"
   },
   "engines": {
-    "vscode": "^1.63.0",
-    "node": ">=22.18.0"
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Themes"
@@ -25,52 +28,14 @@
     "theme",
     "ayu"
   ],
-  "homepage": "https://github.com/ayu-theme/vscode-ayu",
+  "homepage": "https://github.com/qurle/ayu-soft",
   "icon": "assets/logo.png",
   "contributes": {
     "themes": [
       {
-        "id": "Ayu Light",
-        "label": "Ayu Light",
-        "uiTheme": "vs",
-        "path": "./ayu-light-unbordered.json"
-      },
-      {
-        "id": "Ayu Light Bordered",
-        "label": "Ayu Light Bordered",
-        "uiTheme": "vs",
-        "path": "./ayu-light.json"
-      },
-      {
-        "id": "Ayu Mirage",
-        "label": "Ayu Mirage",
+        "label": "Ayu Mirage Soft",
         "uiTheme": "vs-dark",
         "path": "./ayu-mirage-unbordered.json"
-      },
-      {
-        "id": "Ayu Mirage Bordered",
-        "label": "Ayu Mirage Bordered",
-        "uiTheme": "vs-dark",
-        "path": "./ayu-mirage.json"
-      },
-      {
-        "id": "Ayu Dark",
-        "label": "Ayu Dark",
-        "uiTheme": "vs-dark",
-        "path": "./ayu-dark-unbordered.json"
-      },
-      {
-        "id": "Ayu Dark Bordered",
-        "label": "Ayu Dark Bordered",
-        "uiTheme": "vs-dark",
-        "path": "./ayu-dark.json"
-      }
-    ],
-    "iconThemes": [
-      {
-        "id": "ayu",
-        "label": "Ayu",
-        "path": "./ayu-icons.json"
       }
     ]
   },
@@ -81,7 +46,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
-    "ayu": "file:../ayu-colors",
+    "ayu": "file:./src/ayu-colors",
     "tsx": "^4.19.0",
     "typescript": "^5.6.0",
     "vsce": "^2.15.0"
