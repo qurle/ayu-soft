@@ -56,10 +56,10 @@ editor:
   line: 1B1E1E
   selection:
     active: $ui.selection.active
-    inactive: $editor.selection.active A0.13
+    inactive: $ui.selection.normal
   findMatch:
-    active: "736950"
-    inactive: $editor.findMatch.active A0.4
+    active: 656565
+    inactive: $ui.selection.active
   lineNumber:
     active: $ui.fg
     normal: $ui.fg A0.5
@@ -71,10 +71,10 @@ ui:
   bg: $surface.base
   line: 1C1D1F
   selection:
-    active: FFFFFF A0.1
-    normal: 69758C A0.12
+    active: $ui.bg L0.29
+    normal: $ui.bg L0.27
   panel:
-    bg: $ui.bg L0.29
+    bg: $ui.bg L0.26
     shadow: 000000 A0.2
   popup:
     bg: $ui.panel.bg
@@ -83,4 +83,4 @@ common:
   accent:
     tint: D9DADD
     on: $common.accent.tint -L0.39
-  error: FF6666
+  error: FF5542

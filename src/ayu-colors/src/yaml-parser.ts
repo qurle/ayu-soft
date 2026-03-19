@@ -1,6 +1,6 @@
 import { parseDocument, isMap, isScalar, type Document, type Scalar, type Pair } from 'yaml'
 import { readFileSync } from 'node:fs'
-import { Color } from './color.tss'
+import { Color } from './color.js'
 
 // Preprocess YAML content to quote hex color values that YAML would misinterpret
 // Values like 555E73 get parsed as scientific notation (5.55e+75)

@@ -5,7 +5,7 @@ import template, { SchemeName } from './template'
 
 const cwd = process.cwd()
 
-const newNames = {
+const newNames: Record<string, string> = {
   dark: 'mirage-soft-and-fresh',
   mirage: 'mirage-soft',
 }

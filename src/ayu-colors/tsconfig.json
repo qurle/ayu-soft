@@ -9,7 +9,7 @@
     "declaration": true,
     "outDir": "dist",
     "rootDir": "src",
-    "lib": ["ESNext"],
+    "lib": ["ESNext"]
   },
   "include": ["src/**/*"]
 }
