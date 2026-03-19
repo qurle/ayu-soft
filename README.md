@@ -15,4 +15,4 @@ Same as Soft, but fewer color hues and cleaner accents in your code.
 
 ---
 
-Check [orinal repository](https://github.com/ayu-theme/visual-studio) for more information
+Check [original repository](https://github.com/ayu-theme/visual-studio) for more information
