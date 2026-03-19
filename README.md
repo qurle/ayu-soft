@@ -10,7 +10,7 @@ Desaturated backgrounds and action colors.
 ### Ayu Mirage Soft and Fresh
 
 Same as Soft, but fewer color hues and cleaner accents in your code.
-![Ayu Soft And Fresh Screenshot](assets/soft-and-fresh.png?)
+![Ayu Soft And Fresh Screenshot](assets/soft-and-fresh.png)
 
 
 ---
