@@ -15,4 +15,18 @@ Same as Soft, but fewer color hues and cleaner accents in your code.
 
 ---
 
+## How to install
+
+1. Download [VSIX file](https://github.com/qurle/ayu-soft/raw/refs/heads/master/ayu-soft-1.2.0.vsix)
+2. Use `Install from VSIX` option in Command Palette
+
+<img width="640" alt="image" src="https://github.com/user-attachments/assets/f7fe3b5a-6d03-4d78-881a-db28952136b6" />
+
+
+or in extensions menu
+
+<img width="640" alt="image" src="https://github.com/user-attachments/assets/0e1500d1-44b8-4cdf-ac8e-b0301d4b3f19" />
+
+---
+
 Check [original repository](https://github.com/ayu-theme/visual-studio) for more information
