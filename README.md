@@ -12,6 +12,13 @@ Desaturated backgrounds and action colors.
 Same as Soft, but fewer color hues and cleaner accents in your code.
 ![Ayu Soft And Fresh Screenshot](assets/soft-and-fresh.png)
 
+<p align="center"><a href="https://marketplace.visualstudio.com/items?itemName=qurle.ayu-soft">
+  <picture>
+    <source srcset="assets/marketplace-button.svg" type="image/svg+xml" />
+    <img src="assets/marketplace-button.png" alt="MDN" />
+  </picture>
+</a></p>
+
 ---
 
 Check [original repository](https://github.com/ayu-theme/visual-studio) for more information
